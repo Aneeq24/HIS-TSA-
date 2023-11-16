@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 # logger = get_logger(__name__)
 
 DATA_PATH = Path("data")
-KAGGLE_JSON = Path("api_keys/kaggle.json")
+KAGGLE_JSON = Path("kaggle.json")
 IS_KAGGLE_KEY = KAGGLE_JSON.exists()
 KAGGLE_API = None
 
@@ -49,12 +49,12 @@ DATASETS = {
         "path": "dominick_sales",
         "filename": "dominick_sales.zip",
     },
-    # "London Smart Meters": {
-    #     "source": "Monash Forecasting Repository",
-    #     "url": "https://zenodo.org/record/4656072/files/london_smart_meters_dataset_with_missing_values.zip?download=1",
-    #     "path": "london_smart_meters",
-    #     "filename": "london_smart_meters.zip",
-    # },
+     "London Smart Meters": {
+         "source": "Monash Forecasting Repository",
+         "url": "https://zenodo.org/record/4656072/files/london_smart_meters_dataset_with_missing_values.zip?download=1",
+         "path": "london_smart_meters",
+         "filename": "london_smart_meters.zip",
+     },
     "London Smart Meters": {
         "source": "Kaggle",
         "name": "jeanmidev/smart-meters-in-london",
